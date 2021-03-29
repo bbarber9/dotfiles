@@ -50,4 +50,5 @@ zinit light sindresorhus/pure
 
 ### Aliases
 alias ls=exa
+### Dotfile management -- https://www.atlassian.com/git/tutorials/dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

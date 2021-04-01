@@ -63,3 +63,6 @@ alias ls=exa
 alias grep='grep --color=auto'
 ### Dotfile management -- https://www.atlassian.com/git/tutorials/dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+### Autojump Setup
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh

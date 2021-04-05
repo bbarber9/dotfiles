@@ -1,0 +1,9 @@
+font:
+  size: 22.0
+
+background_opacity: .95
+
+window:
+  padding:
+    x: 5
+    y: 5

@@ -24,8 +24,8 @@ zinit light-mode for \
 ### Load NVM
 source /usr/share/nvm/init-nvm.sh
 ### Load work-specfic variables
-if [[ -e ./work_conf.sh ]]; then
-  source ./work_conf.sh
+if [[ -e ~/work_conf.sh ]]; then
+  source ~/work_conf.sh
 fi
 
 ### Automatically load NVM versions

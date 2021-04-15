@@ -1,0 +1,35 @@
+#window {
+    background-color: --wofi-color0;
+    padding: 10px;
+    color: --wofi-color2;
+    font-size: 30px;
+}
+
+#outer-box {
+    padding: 8px;
+}
+
+
+#input {
+    border:none;
+    border-radius:8px;
+    background-color: --wofi-color1;
+    color: inherit;
+    font-size: 35px;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+#text{
+    padding-left:10px;
+}
+
+#entry:nth-child(2n){
+    background-color: --wofi-color4;
+}
+
+
+
+#entry:selected {
+    background-color: --wofi-color3;
+}

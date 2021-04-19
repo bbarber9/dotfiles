@@ -23,10 +23,7 @@ zinit light-mode for \
 
 ### Load NVM
 source /usr/share/nvm/init-nvm.sh
-### Load work-specfic variables
-if [[ -e ~/work_conf.sh ]]; then
-  source ~/work_conf.sh
-fi
+
 
 ### Automatically load NVM versions
 autoload -U add-zsh-hook
@@ -58,6 +55,9 @@ zinit light denysdovhan/spaceship-prompt
 # zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 # zinit light sindresorhus/pure
 
+### PATH additions
+PATH=~/.emacs.d/bin:$PATH
+
 ### Aliases
 alias ls=exa
 alias grep='grep --color=auto'
@@ -66,3 +66,10 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 ### Autojump Setup
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+cat ~/.config/sway/homeConfig.conf > ~/.config/sway/config
+
+### Load work-specfic variables
+if [[ -e ~/work_conf.sh ]]; then
+  source ~/work_conf.sh
+fi

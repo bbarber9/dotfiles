@@ -69,6 +69,16 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 cat ~/.config/sway/homeConfig.conf > ~/.config/sway/config
 
+
+### Start GNOME keyring if we are in sway
+case "$DESKTOP_SESSION" in 
+	sway)
+		export $(gnome-keyring-daemon --start)
+		systemctl --user import-environment
+		systemctl --user restart xdg-desktop-portal
+		;;
+esac
+
 ### Load work-specfic variables
 if [[ -e ~/work_conf.sh ]]; then
   source ~/work_conf.sh

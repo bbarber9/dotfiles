@@ -1,0 +1,9 @@
+anchor=top-center
+font=monospace 16
+background-color=#3a3f40CC
+border-color=#666a6b
+border-radius=5
+default-timeout=3000
+ignore-timeout=1
+width=800
+height=200
